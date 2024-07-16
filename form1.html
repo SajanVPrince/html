@@ -5,18 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration page</title>
     <style>
-        input:hover{
+        /* input:hover{
             color: blueviolet;
             background-color:lightblue;
         }
         input:required {
             background-color: rgb(86, 233, 135);
+        } */
+        input[type=text]:focus {
+            background-color: rgb(16, 126, 163);
+        }
+        input[type=email]:focus {
+            background-color: rgb(21, 214, 53);
+        }
+        textarea:focus {
+            border: 3px solid #555;
+        }
+        input[type=text] ,textarea, input[type=email]{
+            background-color: aqua;
+            color: black;
+        }
+        /* .search{
+            width: 100%;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white; */
+            /* background-image: url('./Images/search.png');
+            background-position: 10px 10px; 
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px; 
+        }*/
+        input[type=submit], input[type=reset]{
+            background-color: #a504aa;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
     <center><h3>Registration Page</h3></center>
     <form action="">
+        <!-- <input type="text" name="search"  class="search" placeholder="Search.."> -->
         <table>
             <tr>
                 <td>First Name :</td>
